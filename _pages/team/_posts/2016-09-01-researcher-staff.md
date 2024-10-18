@@ -1,13 +1,13 @@
 ---
 layout: member
 category: staff
-title: Researcher Name
-image: researcher.png
+title: Micah Corah
+image: micah.jpg
 role: Lab Director
 permalink: 'team/researcher-name'
 social:
-    twitter: https://twitter.com/
-    linkedin: https://www.linkedin.com/
+    twitter: https://x.com/CorahMicah
+    linkedin: https://www.linkedin.com/in/micahcorah/
     google-scholar: https://scholar.google.fr/
     github: https://github.com/
     website:

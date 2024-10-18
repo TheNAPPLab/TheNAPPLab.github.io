@@ -1,20 +1,19 @@
 ---
 layout: member
 category: student
-title: Researcher Name
+title: Sharfi Rahman
 image: researcher.png
 role: PhD Student
-permalink: 'team/researcher-name'
+permalink: 'team/sharfi-rahman'
 social:
-    twitter: https://twitter.com/
+    twitter: https://x.com/RahmanSharfi
     linkedin: https://www.linkedin.com/in/sharfirahman/
-    google-scholar: https://scholar.google.com/citations?user=NHt9KX4AAAAJ
-    github: https://github.com/mcorah
-    website: https://www.micahcorah.com/
-    orcid: https://orcid.org/0000-0002-9324-7875
+    google-scholar: https://scholar.google.com/citations?user=nnkTrJgAAAAJ&hl=en
+    github: https://github.com/7sharfi7
+    website: 
+    orcid: 
     research-gate: https://www.researchgate.net/
 education:
- - Postdoctoral Fellow @ Robotics Institute at Carnegie Mellon University [AirLab](https://theairlab.org/)
+ - PhD student Robotics Colorado School of Mines
 ---
-
-I am an Assistant Professor in Computer Science at the Colorado School of Mines and director of NAPPLab my group studies aerial robotics, active perception, and multi-robot systems with applications to aerial videography, infrastructure inspection, and physical search (mine safety, search and rescue).
+I am a PhD Robotics Student at Colorado School of Mines department of Computer Science.

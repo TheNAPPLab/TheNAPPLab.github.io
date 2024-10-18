@@ -4,7 +4,7 @@ category: staff
 title: Micah Corah
 image: micah.jpg
 role: Lab Director
-permalink: 'team/researcher-name'
+permalink: 'team/micah-corah'
 social:
     twitter: https://x.com/CorahMicah
     linkedin: https://www.linkedin.com/in/micahcorah/

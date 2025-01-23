@@ -1,129 +1,125 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/dcf3d5d0-a4a4-486f-bd9a-64b612392aad/deploy-status)](https://app.netlify.com/sites/brave-bell-c85a34/deploys)
+Research Group Web Site Template
+================================
 
-# Research lab website template
+This is a [Jekyll][]-based Web site intended for research groups. Your group should be able to get up and running with minimal fuss.
 
-This website is built with [Jekyll](https://jekyllrb.com/).
-It is derived from the great template provided by the
-[Allan Lab](https://www.allanlab.org/aboutwebsite.html), at Leiden University.
+<p align="center">
+<img src="screenshot.png" width="387" height="225" alt="screenshot of the template">
+</p>
 
-## Setup
+This project originated at the University of Washington.  You can see the machinery working live at [our site][sampa].
 
-``` bash
-brew install ruby
-gem install bundler jekyll
-```
+This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License][license].
 
-Clone this repository, then install the dependencies:
+[sampa]: http://sampa.cs.washington.edu/
+[license]: https://creativecommons.org/licenses/by-nc/4.0/
 
-``` bash
-bundle install
-```
 
-## Run
+Features
+--------
 
-Run the local webserver with:
+* Thanks to [Jekyll][], content is just text files. So even faculty should be able to figure it out.
+* Publications list generated from BibTeX.
+* Personnel list. Organize your professors, students, staff, and alumni.
+* Combined news stream and blog posts.
+* Easily extensible navigation bar.
+* Responsive (mobile-ready) design based on [Bootstrap][].
 
-``` bash
-bundle exec jekyll serve
-```
+[Bootstrap]: http://getbootstrap.com/
 
-## Contribute
 
-### Add a new member
+Setup
+-----
 
-New members are stored as markdown files under
-[_pages/team/_posts](_pages/team/_posts).
+1. Install the dependencies. You will need [Python][], [bibble][] (`pip install bibble`), and [Jekyll][] (`gem install jekyll`).
+2. [Fork][] this repository on GitHub.
+3. Clone the fork to your own machine: `git clone git@github.com:yourgroup/research-group-web.git`.
+4. Add an "upstream" remote for the original repository so you can stay abreast of bugfixes: `git remote add upstream git://github.com/uwsampa/research-group-web.git`.
+5. Customize. Start with the `_config.yml` file, where you enter the name of the site and its URL.
+6. Type `make` to build the site and then run `make serve` to view your site.
+7. Keep adding content. See below for instructions for each of the various sections.
+8. Periodically pull from the upstream repository: `git pull upstream master`.
 
-Each new member `.md` file must look like this:
+[Python]: https://www.python.org/
+[Fork]: https://github.com/uwsampa/research-group-web/fork
 
-``` yaml
----
-layout: member
-category: staff
-title: Researcher Name
-image: researcher.png
-role: Lab Director
-permalink: 'team/researcher-name'
-social:
-    twitter: https://twitter.com/
-    linkedin: https://www.linkedin.com/
-    google-scholar: https://scholar.google.fr/
-    github: https://github.com/
-    website:
-    orcid: https://orcid.org/
-    research-gate: https://www.researchgate.net/
-education:
- - Education
----
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-cupidatat non proident, sunt in culpa qui officia deserunt
-mollit anim id est laborum.
-```
+Publication List
+----------------
 
-### Add a new publication
+The list of publications is in `bib/pubs.bib`. Typing `make` will generate `pubs.html`, which contains a pretty, sorted HTML-formatted list of papers. The public page, `publications.html`, also has a link to download the original BibTeX.
 
-Publications are stored as `.json` file under
-[_data/publications.json](_data/publications.json).
-This json file is exported from [Zotero](https://www.zotero.org/)
-bibliography tool.
 
-Just add a new entry to the list like this:
+News Items and Blog Posts
+-------------------------
 
-``` json
-{
-  "id": "http://zotero.org/groups/2386072/items/NU9LTX7C",
-  "type": "article-journal",
-  "title": "Foo",
-  "container-title": "IEEE Transactions on Medical Imaging",
-  "page": "448-459",
-  "volume": "38",
-  "issue": "2",
-  "source": "IEEE Xplore",
-  "abstract": "Bar",
-  "DOI": "10.1109/TMI.2018.2865709",
-  "author": [
-    {
-      "family": "",
-      "given": ""
-    },
-  ],
-  "issued": {
-    "date-parts": [
-      [
-        "2019",
-        2
-      ]
-    ]
-  }
-}
-```
+For both long-form blog posts and short news updates, we use Jekyll's blogging system. To post a new item of either type, you create a file in the `_posts` directory using the naming convention `YYYY-MM-DD-title-for-url.md`. The date part of the filename always matters; the title part is currently only used for full blog posts (but is still required for news updates).
 
-### Add news
+The file must begin with [YAML front matter][yfm]. For news updates, use this:
 
-News are stored as `.yml` file under [_data/news.yml](_data/news.yml).
+    ---
+    layout: post
+    shortnews: true
+    ---
 
-An entry looks like the following:
+For full blog posts, use this format:
 
-```yaml
-- date: 03/09/19
-  title: "Something great"
-  tags:
-    - some
-    - tags
-  content: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Eu turpis egestas pretium aenean. Luctus venenatis lectus magna fringilla
-    urna porttitor. Lorem ipsum dolor sit amet. Pellentesque massa placerat
-    duis ultricies. Commodo viverra maecenas accumsan lacus vel.
-```
+    ---
+    layout: post
+    title:  "Some Great Title Here"
+    ---
 
-### Edit template
+And concoct a page title for your post. The body of the post goes after the `---` in either case.
 
-We use [Bootstrap](https://getbootstrap.com/) for designing the website.
-Feel free to modify either the [_pages](_pages/) or the
-[_layouts](_layouts/) components.
+You can also customize the icon that is displayed on the news feed. By default it's `newspaper-o`. We use icons from the [FontAwesome][fa] icon set.
+
+[yfm]: http://jekyllrb.com/docs/frontmatter/
+[fa]: http://fontawesome.io/icons/
+
+Projects
+--------
+
+To create a project, just create a markdown file in the `_projects` folder. Here are the things you can put in the YAML frontmatter:
+
+- `title:` The project title.
+- `notitle:` Set this to `true` if you don't want a title displayed on the project card. Optional.
+- `description:` The text shown in the project card. It supports markdown.
+- `people:` The people working on the project. This is a list of keys from the `_data/people.yml` file.
+- `layout: project` This sets the layout of the actual project page. It should be set to `project`.
+- `image:` The URL of an image for the project. This is shown on both the project page and the project card. Optional.
+- `last-updated:` Date in the format of `YYYY-MM-DD`. The project cards are sorted by this, most recent first.
+- `status: inactive` Set this to `inactive` if don't want the project to appear on the front page. Just ignore it otherwise.
+- `link:` Set this to an external URL if this project has a page somewhere else on the web. If you don't have a `link:`, then the content of this markdown file (below the YAML frontmatter) will be this project's page.
+- `no-link: true` Set this if you just don't want a project page for your project.
+
+Personnel
+---------
+
+People are listed in a [YAML][] file in `_data/people.yml`. You can list the name, link, bio, and role of each person. Roles (e.g., "Faculty", "Staff", and "Students") are defined in `_config.yml`.
+
+[YAML]: https://en.wikipedia.org/wiki/YAML
+
+
+Building
+--------
+
+The requirements for building the site are:
+
+* [Jekyll][]: run `gem install jekyll`
+* [bibble][]: available on `pip`
+* ssh and rsync, only if you want to deploy directly.
+
+`make` compiles the bibliography and the website content to the `_site`
+directory. To preview the site, run `jekyll serve`` and head to
+http://0.0.0.0:5000.
+
+
+Deploying to Your Sever
+-----------------------
+
+To set up deployments, edit the Makefile and look for the lines where `HOST` and `DIR` are defined. Change these to the host where your HTML files should be copied to.
+
+To upload a new version of the site via rsync over ssh, type `make deploy`. A web hook does this automatically when you push to GitHub. Be aware that the Makefile is configured to have rsync delete stray files from the destination directory.
+
+[Jekyll]: http://jekyllrb.com/
+[bibble]: https://github.com/sampsyo/bibble/

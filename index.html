@@ -1,0 +1,25 @@
+---
+layout: default
+title: Home
+notitle: true
+
+# groups of columns of {roles: list, width: num, image: bool}
+role-tables:
+- - roles: [faculty, postdoc]
+    width: 4
+    image: true
+  - roles: [phd, masters, developer]
+    width: 8
+    image: true
+- - roles: [intern, intern-alum, collab]
+    width: 4
+    image: false
+carousels:
+  - images: 
+    - image: /img/slider/group1.jpg
+    - image: /img/slider/group2.jpg
+    - image: /img/slider/group3.jpg
+---
+
+{% translate_file index/index.md %}
+

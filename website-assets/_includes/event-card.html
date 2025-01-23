@@ -1,0 +1,67 @@
+
+{% assign event = include.event %}
+
+{% if event.link %}
+    {% assign proj-url = event.link %}
+{% else %}
+    {% capture proj-url %}{{site.base}}{{event.url}}.html{% endcapture %}
+{% endif %}
+
+
+<div class="card mb-3">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+                {% if event.image %}
+                    {% assign imgurl = event.image %}
+                    {% capture init %}{{ event.image | slice: 0,1 }}{% endcapture %}
+                    {% if init == "/" %}
+                        {% capture imgurl %}{{site.base}}{{event.image}}{% endcapture %}
+                    {% endif %}
+                    <a href="{{ proj-url }}">
+                            <img class="card-img" style="height: 100%; object-fit: contain" src="{{imgurl}}" alt="{{event.title}}"/>
+                    </a>
+                {% endif %}
+          </div>
+          <div class="col-md-8">
+            <div class="card-body border-bottom-primary">
+                {% if event.notitle != true %}
+                <h3 class="card-title">
+                    <strong>
+                        {{  event.title }} 
+                        <span class="badge badge-secondary">{{ event.status | upper}}</span>
+                    </strong>
+                </h3>
+                {% endif %}
+                {% if event.subtitle != null and event.subtitle != "" %}
+                <h6 class="card-subtitle">
+                    {{  event.subtitle }}
+                </h6>
+                {% endif %}
+              <p class="card-text">{{ event.description | markdownify }}</p>
+              {% if event.people %}
+                <div class="card-footer d-flex flex-row flex-wrap justify-content-right">
+                    {% for uname in event.people %}
+                        <span>
+                            {% assign person = site.data.people[uname]  %}
+                            {% include person-image.html person=person %}
+                        </span>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                
+                {% if event.no-link != true or event.link %}
+                <br/>
+                <div class="text-right">
+                        <a href="{{ proj-url }}" class="btn btn-primary btn-icon-split btn-sm">
+                                <span class="icon text-white-50">
+                                <i class="fa fa-robot"></i>
+                                </span>
+                                <span class="text">Read more &raquo;</span>
+                            </a>
+                </div>
+                
+                {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>

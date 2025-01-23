@@ -1,0 +1,65 @@
+
+{% assign person = include.person %}
+
+{% comment %}
+
+Usage:
+
+{% for item in site.data.people %}
+{% assign person = item[1] %}
+{% if person.role == role.key %}
+{% include person.html person=person image=true %}
+{% endif %}
+{% endfor %}
+
+Use the image parameter to include or not include an image.
+
+Note that pl-0 just removes the left padding from the name part that is put
+there by default by Bootstrap columns.
+
+{% endcomment %}
+
+{% if person.webpage %}
+{% capture name %}
+<a href="{{ person.webpage | escape }}"> {{ person.display_name }} </a>
+{% endcapture %}
+{% else %}
+{% assign name = person.display_name %}
+{% endif %}
+
+
+<div class="card mr-2 mb-2 border-bottom-primary" style="min-width: 330px; max-width: 330px">
+  <div class="card-body">
+  {% if include.image %}
+
+  
+    <div class="person person-with-image row align-items-center">
+      {% include person-image.html person=person %}
+      {% endif %}
+      
+      <h4 class="person-name">&nbsp;&nbsp;&nbsp; {{ name }} </h4> </br>
+      <h5>
+       {% if person.advisor %}
+       </br><b>Advisor</b>: {{ person.advisor }} &nbsp;&nbsp;&nbsp;
+       {% endif %}       
+       {% if person.coadvisor %} 
+       </br><b>Coadvisor</b>: {{ person.coadvisor }} &nbsp;&nbsp;&nbsp;
+      {% endif %}
+      {% if person.interests %}
+       </br><b>Interests</b>: {{ person.interests }} 
+      {% endif %}
+      {% if person.thesis %}
+        </br><b>Thesis</b>: <a href="{{ person.thesis_link | escape }}"> {{ person.thesis }} </a> 
+      {% endif %}
+      {% if person.current_role %}
+        </br><b>Current Position</b>: {{ person.current_role }} 
+        {% endif %}
+        </h5>
+      {% if include.image %}
+    </div>
+  
+  {% endif %}
+</div>
+  </div>
+
+

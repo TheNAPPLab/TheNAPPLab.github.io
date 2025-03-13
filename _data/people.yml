@@ -814,3 +814,12 @@ artur_kuramshin:
     advisor: Glen Berseth
     image: /img/people/artur-k.jpg
     webpage: "https://akuramshin.github.io/"
+
+tabitha:
+    display_name: "Tabitha Edith Lee"
+    role: postdoc
+    advisor: Glen Berseth
+    coadvisor: Yoshua Bengio
+    image: /img/people/tabitha.png
+    webpage: "https://tabula-rosa.github.io/"
+    interests: "Causality, Reinforcement Learning, Representation Learning, Robotics"

@@ -795,3 +795,31 @@ adam:
     role: masters
     advisor: Liam Paull
     image: /img/people/adam.jpg
+
+florence_cloutier:
+    display_name: "Florence Cloutier"
+    role: masters
+    advisor: Glen Berseth
+    image: /img/people/florence.png
+
+charlotte_cloutier:
+    display_name: "Charlotte Cloutier"
+    role: intern
+    advisor: Glen Berseth
+    image: /img/people/charlotte.JPG
+
+artur_kuramshin:
+    display_name: "Artur Kuramshin"
+    role: masters
+    advisor: Glen Berseth
+    image: /img/people/artur-k.jpg
+    webpage: "https://akuramshin.github.io/"
+
+tabitha:
+    display_name: "Tabitha Edith Lee"
+    role: postdoc
+    advisor: Glen Berseth
+    coadvisor: Yoshua Bengio
+    image: /img/people/tabitha.png
+    webpage: "https://tabula-rosa.github.io/"
+    interests: "Causality, Reinforcement Learning, Representation Learning, Robotics"

@@ -86,7 +86,7 @@ Hongyao:
     webpage: "https://bluecontra.github.io/"
     interests: "Reinforcement Learning, Representation Learning"
     advisor: Glen Berseth
-    role: postdoc
+    role: postdoc-alum
     image: /img/people/hongyao.jpg
 
 cyrus:
@@ -169,9 +169,11 @@ zhen:
     display_name: "Zhen Liu"
     advisor: Liam Paull
     coadvisor: "Yoshua Bengio"
-    role: phd
+    role: phd-alum
     image: /img/people/zhen.jpeg
     webpage: "http://itszhen.com/"
+    current_role: Assistant professor @ CUHK-Shenzhen
+    thesis: "Understanding Our 3D World via Generative Modeling"
 
 mostafa:
     display_name: "Mostafa ElAraby"

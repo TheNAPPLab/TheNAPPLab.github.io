@@ -40,6 +40,14 @@ Setup
 7. Keep adding content. See below for instructions for each of the various sections.
 8. Periodically pull from the upstream repository: `git pull upstream master`.
 
+```sudo apt-get update```
+
+```sudo apt-get install -y build-essential libssl-dev zlib1g-dev libyaml-dev libreadline-dev libncurses5-dev libffi-dev libgdbm-dev libdb-dev```
+To install Ruby
+```rvm install 3.2.2 ```
+> rvm list
+>source ~/.rvm/scripts/rvm
+> rvm use 3.2.2
 [Python]: https://www.python.org/
 [Fork]: https://github.com/uwsampa/research-group-web/fork
 
@@ -123,3 +131,7 @@ To upload a new version of the site via rsync over ssh, type `make deploy`. A we
 
 [Jekyll]: http://jekyllrb.com/
 [bibble]: https://github.com/sampsyo/bibble/
+
+
+------
+RUN - bundle exec jekyll serve

@@ -1,8 +1,8 @@
 <div class="jumbotron">
     {% include carousel.html height="65" unit="%" duration="4" number="1" %}
     <!-- <img src="/img/group.jpg" class="d-block w-100" alt="..."> -->
-    <h1 class="display-4">Navigation, Aerial-robots, and Perception Planning Lab (NappLab)</h1>
-    <p class="lead">The <strong>Navigation, Aerial-robots, and Perception Planning Lab (NappLab)</strong>  is a research group in <a href="https://www.mines.edu/">Colorado School of Mines</a> CS Department. We study aerial robotics, active perception, and multi-robot systems with applications to aerial videography, infrastructure inspection, and physical search (mine safety, search and rescue). </p>
+    <h1 class="display-4">Robotics and Embodied AI Lab (REAL)</h1>
+    <p class="lead">The <strong>Robotics and Embodied AI Lab (REAL)</strong> is a research lab in <a href="http://diro.umontreal.ca">DIRO</a> at the  <b>Université de Montréal</b>  and is also affiliated with  <a href="https://mila.quebec/en/">Mila</a>. REAL is dedicated to making generalist robots and other embodied agents. </p>
     <p> We are always looking out for talented students to join us as full-time students / visitors. To know more, click on the link below.</p>
     <a class="btn btn-primary btn-lg" href="{{ site.base }}/contact.html" role="button">Learn more</a>
   </div>

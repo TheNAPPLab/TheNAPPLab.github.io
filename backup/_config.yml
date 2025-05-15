@@ -1,11 +1,11 @@
-title: NAPPLab Robotics Lab @ Colorado School of Mines
-repository: TheNAPPLab/TheNAPPLab.github.io
+title: Robotics Group @ University of Montreal 
+repository: montrealrobotics/montrealrobotics.github.io 
 
-name: NAPPLab Robotics Lab @ Colorado School of Mines
-description: The Navigation, Aerial-robots, and Perception Planning Lab @ Colorado School of Mines
-url: https://TheNAPPLab.github.io
+name: Robotics Group @ University of Montreal
+description: The Robotics and Embodied AI Lab @ U de Montreal
+url: https://montrealrobotics.github.io
 
-exclude: [bibble, README.md, Makefile, screenshot.png, vendor, venv]
+exclude: [bibble, README.md, Makefile, screenshot.png, vendor]
 
 # colorize code snippets with the pygments module
 highlighter: rouge
@@ -19,27 +19,26 @@ roles:
     name: Faculty
   - key: staff
     name: Staff
-  # - key: postdoc
-  #   name: Postdocs
+  - key: developer
+    name: Software Developers
+  - key: postdoc
+    name: Postdocs
   - key: masters
     name: Master's Students
   - key: phd
     name: PhD Students
   - key: intern
-    name: Undergraduate Researchers
+    name: Undergraduate Researchers and Interns
+  - key: postdoc-alum
+    name: Past Postocs
+  - key: phd-alum
+    name: Past PhD Students
+  - key: masters-alum
+    name: Past Master's Students
+  - key: intern-alum
+    name: Past Undergraduate Researchers and Interns
   - key: visitor
-    name: Visiting Students
-  # - key: postdoc-alum
-  #   name: Past Postocs
-  # - key: phd-alum
-  #   name: Past PhD Students
-  # - key: masters-alum
-  #   name: Past Master's Students
-  # - key: intern-alum
-  #   name: Past Undergraduate Researchers and Interns
-  # - key: visitor-alum
-  #   name: Past Visiting Students and Faculty
-
+    name: Visiting Students and Faculty
 
 
 includes_dir: website-assets/_includes
@@ -73,14 +72,14 @@ navigation:
     link: /people.html
   - title: Research
     link: /research.html
-  - title: Publications
-    link: /publications/
-  # - title: Events
-  #   link: /events.html
+#  - title: Publications
+#    link: /publications/
+  - title: Events
+    link: /events.html
   - title: Contact
     link: /contact.html
-  # - title: Blog
-  #   link: /blog.html
+  - title: Blog
+    link: /blog.html
 
 # Includes
 include: ['_pages']
@@ -90,20 +89,7 @@ plugins:
     - ['jekyll/scholar']
     - jemoji
 
-
-# Build settings
-markdown: kramdown
-highlighter: pygments
-
-# Jekyll-Scholar
-scholar:
-
-  style: apa
-  locale: en
-
-  sort_by: year
-  order: descending
-
+Montreal Robotics Summer School
   source: /_bibliography/
   bibliography: papers.bib
   bibliography_template: bib
@@ -124,4 +110,4 @@ anchorjs_version: "3.2.2"
 plugins:
   - jekyll-multiple-languages-plugin
 
-languages: ["en"]
+languages: ["en", "fr"]

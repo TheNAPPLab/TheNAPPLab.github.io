@@ -35,8 +35,8 @@ roles:
   #   name: Past PhD Students
   # - key: masters-alum
   #   name: Past Master's Students
-  # - key: intern-alum
-  #   name: Past Undergraduate Researchers and Interns
+  - key: intern-alum
+    name: Past Undergraduate Researchers and Interns
   # - key: visitor-alum
   #   name: Past Visiting Students and Faculty
 

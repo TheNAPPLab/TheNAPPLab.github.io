@@ -15,7 +15,7 @@ member-tables:
 alumni-tables:
 - - roles: [postdoc-alum, phd-alum, masters-alum, intern-alum]
     width: 4
-    image: false
+    image: true
 
 ---
 
@@ -59,13 +59,12 @@ alumni-tables:
   <div class="card shadow mb-4">
     <div class="card-body">
       {% for role-table in page.alumni-tables %}
-      {% for role-column in role-table %}
-      {% for role in role-column.roles %}
-      {% include role-people.html role=role image=role-column.image %}
+        {% for role-column in role-table %}
+          {% for role in role-column.roles %}
+            {% include role-people.html role=role image=role-column.image %}
       <br/>
-      {% endfor %}
-      {% endfor %}
-      
+          {% endfor %}
+        {% endfor %}
       {% endfor %}
     </div>
   </div>  

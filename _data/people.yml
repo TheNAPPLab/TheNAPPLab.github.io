@@ -69,7 +69,6 @@ peter:
 john:
     display_name: "John M Takatz"
     interests: "Programming, Artificial Intelligence, Computer Vision, Robotics, and CAD modeling are all interesting."
-    # role: intern
     role: intern-alum
     image: /img/people/john.jpg
     current_role: Developer

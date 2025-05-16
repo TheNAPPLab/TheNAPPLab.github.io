@@ -1,4 +1,4 @@
 [submodule "website-assets"]
 	path = website-assets
-	url = git@github.com:montrealrobotics/website-assets.git
+	url = git@github.com:TheNAPPLab/website-assets.git
         branch = master

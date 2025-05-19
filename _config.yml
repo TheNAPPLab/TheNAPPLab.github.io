@@ -3,7 +3,7 @@ repository: TheNAPPLab/TheNAPPLab.github.io
 
 name: NAPPLab Robotics Lab @ Colorado School of Mines
 description: The Navigation, Aerial-robots, and Perception Planning Lab @ Colorado School of Mines
-url: https://TheNAPPLab.github.io
+url: https://www.napplab.org
 
 exclude: [bibble, README.md, Makefile, screenshot.png, vendor, venv]
 

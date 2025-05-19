@@ -4,7 +4,7 @@
     <h1 class="display-4">Navigation, Aerial-robots, and Perception Planning Lab (NappLab)</h1>
     <p class="lead">The <strong>Navigation, Aerial-robots, and Perception Planning Lab (NappLab)</strong>  is a research group in <a href="https://www.mines.edu/">Colorado School of Mines</a> CS Department. We study aerial robotics, active perception, and multi-robot systems with applications to aerial videography, infrastructure inspection, and physical search (mine safety, search and rescue). </p>
     <p> We are always looking out for talented students to join us as full-time students / visitors. To know more, click on the link below.</p>
-    <a class="btn btn-primary btn-lg" href="{{ site.base }}/contact.html" role="button">Learn more</a>
+    <a class="btn mines-theme-blaster-blue text-white btn-lg" href="{{ site.base }}/contact.html" role="button">Learn more</a>
   </div>
 
 <!--
@@ -46,7 +46,7 @@
               {% include project-card.html project=p %}
             {% endfor %}
             <p>
-                <a href="{{ site.base }}/research.html" class="btn btn-primary btn-icon-split btn-sm">
+                <a href="{{ site.base }}/research.html" class="btn mines-theme-blaster-blue text-white btn-icon-split btn-sm">
                   <span class="icon text-white-50">
                   <i class="fa fa-robot"></i>
                   </span>

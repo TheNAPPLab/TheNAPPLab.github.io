@@ -111,6 +111,10 @@ People are listed in a [YAML][] file in `_data/people.yml`. You can list the nam
 Building
 --------
 
+First clone the website asset with
+
+`git clone https://github.com/TheNAPPLab/website-assets.git`
+
 The requirements for building the site are:
 
 * [Jekyll][]: run `gem install jekyll`

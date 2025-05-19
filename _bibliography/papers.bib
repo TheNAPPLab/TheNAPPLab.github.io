@@ -8,21 +8,6 @@
 @string{wafr = {Workshop on the Algorithmic Foundations of Robotics}}
 @string{iser = {Proc. of the Intl. Sym. on Exp. Robot.}}
 
-# Recent arxiv papers
-@article{hughes2024multi,
-  title={Multi-Robot Planning for Filming Groups of Moving Actors Leveraging Submodularity and Pixel Density},
-  author={Hughes, Skyler and Martin, Rebecca and Corah, Micah and Scherer, Sebastian},
-  arxiv={arXiv:2404.03103},
-  year={2024}
-}
-
-@article{suresh2024greedy,
-  title={Greedy Perspectives: Multi-Drone View Planning for Collaborative Coverage in Cluttered Environments},
-  author={Suresh, Krishna and Rauniyar, Aditya and Corah, Micah and Scherer, Sebastian},
-  arxiv={arXiv:2310.10863},
-  year={2024}
-}
-
 # Journals
 @article{kim2023multi,
   title={Multi-Robot Multi-Room Exploration with Geometric Cue Extraction and Circular Decomposition},
@@ -56,6 +41,22 @@
 }
 
 # Conference papers
+
+@inproceedings{suresh2024iros,
+  title={Greedy Perspectives: Multi-Drone View Planning for Collaborative Coverage in Cluttered Environments},
+  author={Suresh, Krishna and Rauniyar, Aditya and Corah, Micah and Scherer, Sebastian},
+  booktitle=iros,
+  year={2024}
+}
+
+@inproceedings{hughes2024multi,
+  title={Multi-Robot Planning for Filming Groups of Moving Actors Leveraging Submodularity and Pixel Density},
+  author={Hughes, Skyler and Martin, Rebecca and Corah, Micah and Scherer, Sebastian},
+  arxiv={arXiv:2404.03103},
+  booktitle=cdc,
+  year={2024}
+}
+
 @inproceedings{corah2021iros,
   author = {Micah Corah and Nathan Michael},
   title = {Scalable Distributed Planning for Multi-Robot, Multi-Target Tracking},
@@ -113,144 +114,13 @@
   booktitle=icra,
   year={2017}
 }@string{auro = {Autonomous Robots}}
-@string{fsr = {Field and Service Robotics}}
-@string{ral = {Robotics and Automation Letters}}
-@string{cdc = {Conference on Decision and Control}}
-@string{rss = {Robotics: Science and Systems}}
-@string{icra = {International Conference on Robotics and Automation}}
-@string{iros = {International Conference on Intelligent Robots and Systems}}
-@string{wafr = {Workshop on the Algorithmic Foundations of Robotics}}
-@string{iser = {Proc. of the Intl. Sym. on Exp. Robot.}}
-
-# Recent arxiv papers
-@article{hughes2024multi,
-  title={Multi-Robot Planning for Filming Groups of Moving Actors Leveraging Submodularity and Pixel Density},
-  author={Hughes, Skyler and Martin, Rebecca and Corah, Micah and Scherer, Sebastian},
-  arxiv={arXiv:2404.03103},
-  year={2024}
-}
-
-@article{suresh2024greedy,
-  title={Greedy Perspectives: Multi-Drone View Planning for Collaborative Coverage in Cluttered Environments},
-  author={Suresh, Krishna and Rauniyar, Aditya and Corah, Micah and Scherer, Sebastian},
-  arxiv={arXiv:2310.10863},
-  year={2024}
-}
-
-# Journals
-@article{kim2023multi,
-  title={Multi-Robot Multi-Room Exploration with Geometric Cue Extraction and Circular Decomposition},
-  author={Kim, Seungchan and Corah, Micah and Keller, John and Best, Graeme and Scherer, Sebastian},
-  journal=ral,
-  year={2023},
-  publisher={IEEE},
-  video={https://www.youtube.com/watch?v=zUtK1hh2Tpo}
-}
-
-@article{corah2019auro,
-  author = {Corah, Micah and Michael, Nathan},
-  title = {Distributed matroid-constrained submodular maximization for multi-robot exploration: theory and practice},
-  journal = auro,
-  year = {2019}
-}
-
-@article{corah2019ral,
-  title={Communication-Efficient Planning and Mapping for Multi-Robot Exploration in Large Environments},
-  author={Corah, Micah and O'Meadhra, Cormac and Goel, Kshitij and Michael, Nathan},
-  journal=ral,
-  year={2019},
-  video={https://youtu.be/aTIcJ6X2b_8}
-}
-
-@article{nelson2018auro,
-  title={Environment model adaptation for mobile robot exploration},
-  author={Nelson, Erik and Corah, Micah and Michael, Nathan},
-  journal=auro,
-  year={2018}
-}
 
 # Conference papers
-@inproceedings{corah2021iros,
-  author = {Micah Corah and Nathan Michael},
-  title = {Scalable Distributed Planning for Multi-Robot, Multi-Target Tracking},
-  booktitle=iros,
-  year = {2021},
-  arxiv = {arXiv:2107.08550},
-  code = {https://github.com/mcorah/MultiAgentSensing},
-  presentation = {https://youtu.be/vbpeyYuODWM}
-}
-
-@inproceedings{corah2021icra,
-  title={Volumetric Objectives for Multi-Robot Exploration of Three-Dimensional Environments},
-  author={Corah, Micah and Michael, Nathan},
-  booktitle=icra,
-  year={2021},
-  arxiv = {arXiv:2103.11625},
-  presentation = {https://youtu.be/goYNA5d21z4}
-}
-
-@inproceedings{choi2021iser,
-  title={{BAXTER}: Bi-modal Aerial-Terrestrial Hybrid Vehicle for Long-endurance Versatile Mobility},
-  author={Choi, Hyungho Chris and Wee, Inhwan and Corah, Micah and Sabet, Sahand and Kim, Taeyeon and Touma, Thomas and Shim, David Hyunchul and Agha-mohammadi, Ali-akbar},
-  booktitle=iser,
-  arxiv= {arXiv:2102.02942},
-  year={2021}
-}
-
-@inproceedings{goel2019fsr,
-  author = {Kshitij Goel and Micah Corah and Curtis Boirum and Nathan Michael},
-  title = {Fast Exploration using Multirotors: Analysis, Planning, and Experimentation},
-  booktitle=fsr,
-  year = {2019},
-  video = {https://youtu.be/YXt4yiTpOAc},
-  supp = {https://youtu.be/IC9b8G1cVpE}
-}
-
-@inproceedings{corah2018cdc,
-  author = {Corah, Micah and Michael, Nathan},
-  title={Distributed Submodular Maximization on Partition Matroids for Planning on Large Sensor Networks},
-  booktitle=cdc,
-  code = {https://github.com/mcorah/MultiAgentSensing},
-  year = {2018}
-}
-
-@inproceedings{corah2017rss,
-  author = {Corah, Micah and Michael, Nathan},
-  title={Efficient Online Multi-robot Exploration via Distributed Sequential Greedy Assignment},
-  booktitle=rss,
-  year = {2017}
-}
-
-@inproceedings{corah2017icra,
-  title={Active estimation of mass properties for safe cooperative lifting},
-  author={Corah, Micah and Michael, Nathan},
-  booktitle=icra,
-  year={2017}
-}
-
 @inproceedings{tabib2016iros,
   title={Computationally efficient information-theoretic exploration of pits and caves},
   author={Tabib, Wennie and Corah, Micah and Michael, Nathan and Whittaker, Red},
   booktitle=iros,
   year={2016}
-}
-
-@inproceedings{mitchell2015icra,
-  title={Multi-robot long-term persistent coverage with fuel constrained robots},
-  author={Mitchell, Derek and Corah, Micah and Chakraborty, Nilanjan and Sycara, Katia and Michael, Nathan},
-  booktitle=icra,
-  year={2015}
-}
-
-# Thesis
-@phdthesis{corah2020phd,
-  author = {Micah Corah},
-  school = {Carnegie Mellon University},
-  title = {Sensor Planning for Large Numbers of Robots},
-  year = {2020},
-  video={https://youtu.be/MMr9NxT_J8c},
-  arxiv={arXiv:2102.04054}
-}
 }
 
 @inproceedings{mitchell2015icra,

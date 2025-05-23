@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Contact
+title: Contact/Join Us!
 ---
 
 To contact us, please email Dr. Micah Corah at `micah.corah@mines.edu`

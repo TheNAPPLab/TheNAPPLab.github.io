@@ -3,7 +3,7 @@ layout: default
 title: Contact/Join Us!
 ---
 
-To contact us, please email Dr. Micah Corah at `micah.corah@mines.edu`
+To contact us, please email Dr. Micah Corah at `micah.corah@mines.edu`.
 
 ## Working with NAPPLab!
 
@@ -19,12 +19,12 @@ involving aerial robots, system integration, or control.
 <div class="card border-left-primary shadow">
 <!-- Card Header - Dropdown -->
 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-    <h4 class="m-0 font-weight-bold text-primary">Full-time students (M.S./Ph.D.)</h4>
+    <h4 class="m-0 font-weight-bold text-primary">Graduate applicants (M.S./Ph.D.)</h4>
 </div>
 <!-- Card Body -->
 <div class="card-body">
     <p>
-    To inquire about available and funded positions, please email Dr. Corah
+    To inquire about projects and funding, please email Dr. Corah
     with the subject line
     "NAPPLab graduate inquiry (<i>insert your name</i>)"
     </p>

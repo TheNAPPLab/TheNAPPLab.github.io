@@ -5,7 +5,7 @@ description: We take a learning approach to learning a policy for robot Inpsecti
 people:
   - tosin
   - micah
-
+  - noah
 
 
 layout: project

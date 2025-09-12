@@ -80,3 +80,9 @@ rebecca:
     role: intern
     image: /img/people/rebecca.jpg
     current_role: Developer
+
+Fahad:
+    display_name: "Fahad Asat"
+    interests: "Robotic perception, simulation, and programming"
+    role: masters
+    image: /img/people/fahad.jpg

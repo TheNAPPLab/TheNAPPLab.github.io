@@ -81,8 +81,14 @@ rebecca:
     image: /img/people/rebecca.jpg
     current_role: Developer
 
+
 Fahad:
     display_name: "Fahad Asat"
     interests: "Robotic perception, simulation, and programming"
     role: masters
     image: /img/people/fahad.jpg
+adam:
+    display_name: "Adam Martin"
+    webpage: "https://admrtin.github.io/"
+    role: masters
+    image: /img/people/adam.jpg

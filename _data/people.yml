@@ -99,3 +99,10 @@ adam:
     webpage: "https://admrtin.github.io/"
     role: masters
     image: /img/people/adam.jpg
+
+james:
+    display_name: "James Slopey"
+    interests: "Computer Science - Robotics & Computer Vision"
+    role: intern
+    image:  /img/people/james.jpg
+    current_role: Developer

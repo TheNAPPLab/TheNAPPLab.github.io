@@ -7,6 +7,7 @@ people:
   - micah
   - john
   - edward
+  - james
 
 
 # collaborators:

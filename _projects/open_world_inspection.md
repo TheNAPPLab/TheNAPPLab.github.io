@@ -7,7 +7,7 @@ people:
   - micah
   - noah
   - lael
-  - rachel
+  - rebecca
 
 
 layout: project

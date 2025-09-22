@@ -113,3 +113,8 @@ james:
     role: intern
     image:  /img/people/james.jpg
     current_role: Developer
+lael:
+    display_name: "Lael Lum"
+    interests: "Computer Science - Robot Inspection and Planning"
+    role: masters
+    image:  /img/people/lael.jpg

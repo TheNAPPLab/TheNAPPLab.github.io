@@ -84,7 +84,7 @@ rebecca:
 noah:
     display_name: "Noah Chapman"
     webpage: "https://www.linkedin.com/in/nochapman/"
-    interests: "Robotics, Robot Perception, Computer Vision, Machine Learning and "
+    interests: "Robot Perception, Computer Vision, Machine Learning, and Mechatronics"
     role: masters
     image: /img/people/noah.jpg
     current_role: Developer
@@ -105,4 +105,11 @@ tim:
     intrests: "Computer Vision, Artificial Intelligence, and Robotics"
     role: intern
     image: /img/people/tim.jpg
+    current_role: Developer
+
+james:
+    display_name: "James Slopey"
+    interests: "Computer Science - Robotics & Computer Vision"
+    role: intern
+    image:  /img/people/james.jpg
     current_role: Developer

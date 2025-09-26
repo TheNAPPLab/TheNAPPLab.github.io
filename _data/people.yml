@@ -73,12 +73,12 @@ john:
     image: /img/people/john.jpg
     current_role: Developer
 
-rebecca:
-    display_name: "Rebecca Hollis"
+rudy:
+    display_name: "Rudy Hollis"
     webpage: "www.linkedin.com/in/rebhollis"
     interests: "I am just happy to be here and learn things"
     role: intern
-    image: /img/people/rebecca.jpg
+    image: /img/people/rudy.jpg
     current_role: Developer
 
 noah:

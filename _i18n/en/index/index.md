@@ -1,7 +1,7 @@
 <div class="jumbotron">
     {% include carousel.html height="65" unit="%" duration="4" number="1" %}
     <!-- <img src="/img/group.jpg" class="d-block w-100" alt="..."> -->
-    <h1 class="display-4">Navigation, Aerial-robots, and Perception Planning Lab (NappLab)</h1>
+    <h1 class="display-4">Navigation, Aerial-robots, and Perception Planning Lab (NAPPLab)</h1>
     <p class="lead">The <strong>NAPPLab</strong> is a research group at <a href="https://www.mines.edu/">Colorado School of Mines</a>  in the <a href="https://cs.mines.edu/">Computer Science Department</a>.
     Our research is at the intersection of aerial robotics, active perception, and multi-robot systems, and our work has applications to aerial videography, infrastructure inspection, and physical search (mine safety, search and rescue). </p>
     <a class="btn mines-theme-blaster-blue text-white btn-lg" href="{{ site.base }}/contact.html" role="button">Join Us!</a>

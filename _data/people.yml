@@ -48,14 +48,14 @@ tosin:
 carole:
     display_name: "Carole Bouy"
     interests: "Robot coordination and Robot Videography"
-    role: masters
+    role: masters-alum
     image: /img/people/carole.jpg
 
 
 edward:
     display_name: "Edward Gibson"
     interests: "Computer Science - Robotics & Intelligent Systems"
-    role: intern
+    role: intern-alum
     image:  /img/people/edward.jpg
     current_role: Developer
 
@@ -85,7 +85,7 @@ noah:
     display_name: "Noah Chapman"
     webpage: "https://www.linkedin.com/in/nochapman/"
     interests: "Robot Perception, Computer Vision, Machine Learning, and Mechatronics"
-    role: masters
+    role: masters-alum
     image: /img/people/noah.jpg
     current_role: Developer
 
@@ -97,24 +97,24 @@ Fahad:
 adam:
     display_name: "Adam Martin"
     webpage: "https://admrtin.github.io/"
-    role: masters
+    role: masters-alum
     image: /img/people/adam.jpg
 tim:
     display_name: "Timothy Churchill"
     webpage: "https://www.linkedin.com/in/timothy-churchill-5bb23b241/"
     intrests: "Computer Vision, Artificial Intelligence, and Robotics"
-    role: intern
+    role: intern-alum
     image: /img/people/tim.jpg
     current_role: Developer
 
 james:
     display_name: "James Slopey"
     interests: "Computer Science - Robotics & Computer Vision"
-    role: intern
+    role: intern-alum
     image:  /img/people/james.jpg
     current_role: Developer
 lael:
     display_name: "Lael Lum"
     interests: "Computer Science - Robot Inspection and Planning"
-    role: masters
+    role: masters-alum
     image:  /img/people/lael.jpg
